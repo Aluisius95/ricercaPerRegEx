@@ -13,10 +13,10 @@ var arr = [
   { autore: 'tolkien', titolo: 'the lord of the rings' },
 ];
 
-console.log('mi stai disubbidendo');
-function monella() {
+
+function something() {
   appRes.innerHTML = '';
-  console.log('mi hai fatto arrabbiare, MONELLA');
+  
   arr.forEach((element) => {
     if (element.titolo.search(appTxt.value) != -1)
       appRes.innerHTML +=
@@ -25,4 +25,4 @@ function monella() {
   if (appTxt.value.length == 0) appRes.innerHTML = '';
 }
 
-appTxt.onkeyup = monella;
+appTxt.onkeyup = something;
